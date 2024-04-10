@@ -2,32 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+    :root {
+      --background: 230 24% 19%;
+      --foreground: 229 35% 75%;
+      --muted: 230 12% 23%;
+      --muted-foreground: 230 12% 73%;
+      --popover: 230 24% 16%;
+      --popover-foreground: 229 35% 85%;
+      --card: 230 24% 17%;
+      --card-foreground: 229 35% 80%;
+      --border: 230 14% 24%;
+      --input: 230 14% 27%;
+      --primary: 223 45% 74%;
+      --primary-foreground: 150% 0% 100%;
+      --secondary: 223 30% 75%;
+      --secondary-foreground: 223 30% 15%;
+      --accent: 230 24% 34%;
+      --accent-foreground: 230 24% 94%;
+      --destructive: 2 80% 58%;
+      --destructive-foreground: 0 0% 100%;
+      --ring: 223 45% 44%;
+      --radius: 0.5rem;
+    }
+  
+    .dark {
+      --background: 230 24% 19%;
+      --foreground: 229 35% 75%;
+      --muted: 230 12% 23%;
+      --muted-foreground: 230 12% 73%;
+      --popover: 230 24% 16%;
+      --popover-foreground: 229 35% 85%;
+      --card: 230 24% 17%;
+      --card-foreground: 229 35% 80%;
+      --border: 230 14% 24%;
+      --input: 230 14% 27%;
+      --primary: 223 45% 44%;
+      --primary-foreground: 0 0% 100%;
+      --secondary: 223 30% 75%;
+      --secondary-foreground: 223 30% 15%;
+      --accent: 230 24% 34%;
+      --accent-foreground: 230 24% 94%;
+      --destructive: 2 80% 58%;
+      --destructive-foreground: 0 0% 100%;
+      --ring: 223 45% 44%;
+    }
   }
-}
+    
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+    /* a:hover {
+        @apply text-secondary-400/100;
+    }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+    .animate, a, a:hover {
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    } */
