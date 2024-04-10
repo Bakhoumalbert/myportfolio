@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import Image from "next/image";
-import { Spinner } from "../spinner/Spinner";
 
 interface Props {
   size?: "small" | "medium" | "large" | "extra-large";
@@ -47,7 +46,6 @@ export const Avatar = ({ size = "medium", src, alt, isLoading }: Props) => {
           isLoading && "blur-[2px]",
           "rounded-full object-cover object-center animate")}
       />
-      {isLoading && (<Spinner className="relative z-20" />)}
     </div>
   );
 };

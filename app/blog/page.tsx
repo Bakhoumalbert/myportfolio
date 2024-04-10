@@ -1,9 +1,8 @@
-import DesignSystem from "@/ui/modules/design-system";
 
 export default function Home() {
     return (
         <div>
-            <DesignSystem />
+            <h1>My blog</h1>
         </div>
     );
 }

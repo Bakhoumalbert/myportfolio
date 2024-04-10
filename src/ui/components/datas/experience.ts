@@ -1,4 +1,4 @@
-import { expert } from "../type/expert";
+import { expert } from "@/types/expert";
 
 export const competencesList: expert[] = [
     {
