@@ -13,7 +13,7 @@ export const BentoGrid = ({
     return (
         <div
             className={cn(
-                "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-2 mx-auto",
+                "grid md:auto-rows-auto grid-cols-1 md:grid-cols-3 gap-2 mx-auto",
                 className
             )}
         >
@@ -52,7 +52,7 @@ export const BentoGridItem = ({
                 </div>
                 <div className="mt-2">
                 <Link href={link}>
-                    <Code className="inline-flex items-center">
+                    <Code className="inline-flex text-sm items-center">
                         Consulter
                         <ArrowUpRight size={16} />
                     </Code>

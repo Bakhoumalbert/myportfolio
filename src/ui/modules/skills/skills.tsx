@@ -1,44 +1,52 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Skills_dataScientist, Skills_dev } from "@/ui/components/datas/skill"
-import { Typography } from "@/ui/design-system/typography/Typography"
-import { Competence } from "./component/competence"
 import { Container } from "@/ui/components/container/Container"
+import { Code } from "../hero-top/component/Top-hero"
+import Image from "next/image"
 
-export const Skill = () => {
-    return (
-        <Container>
-            <h1 className="text-4xl font-caption">
-                Skills
-            </h1>
-            <p className="text-sm font-caption pb-2">
-                J'aime travailler sur ... 
-            </p>
-            <div className="flex flex-row">
-            <div className="flex-1 flex-col space-y-4 ">
-                <p className="text-sm font-caption">
-                    La création d'application Web avec :
-                </p>
-                <div className="flex flex-wrap items-start gap-4">
-                    {Skills_dev.map((skill, index) => (
-                        <Competence key={index} skill={skill} />
-                        )
-                        )}
-                </div>
+export const Skills = () => {
+  return (
+    <Container className="flex flex-col items-start gap-4">
+          <h1 className="text-4xl font-caption">
+              Compétences
+          </h1>
+        <h2 className="pb-2 text-xl font-semibold tracking-tight first:mt-0">
+            J'aime travailler sur... 
+        </h2>
+        <div className="flex max-md:flex-col gap-4">
+            <div className="flex flex-col gap-2 flex-1">
+                  <Image
+                      src="/svg/react.svg"
+                      alt="powerBI logo"
+                      width={42}
+                      height={42}
+                      className="animate-spin"
+                      style={{animationDuration: "10s"}}
+                  />
+                 <h3 className="text-2xl font-semibold tracking-tight">React</h3>
+                  <p className="text-sm text-muted-foreground">J'utilise <Code>React</Code> pour créer des aplications interactives. j'utilise <Code>NextJs</Code> est utiliser comme un frontend et Backend framework. Avec comme base de données <Code>Prisma</Code> ou <Code className="text-alert-success">Firebase</Code> pour la gestion de la base de donnees.</p>
             </div>
-            <div className="flex-1 md:flex-col space-y-4">
-                <p className="text-sm font-caption">
-                    Le traitement et l'analyse des données avec :
-                </p>
-                <div className="w-full flex items-start">
-                <div className="flex flex-wrap justify-center md:justify-start gap-4">
-                    {Skills_dataScientist.map((skill, index) => (
-                        <Competence key={index} skill={skill} />
-                        )
-                        )}
-                </div>
+              <div className="flex flex-col gap-2 flex-1">
+                  <Image
+                      src="/svg/python.svg"
+                      alt="powerBI logo"
+                      width={42}
+                      height={42}
+                      />
+                  <h3 className="text-2xl font-semibold tracking-tight">Python</h3>
+          <p className="text-sm text-muted-foreground">Je travaille aussi comme <Code>Data Engineer</Code> avec <Code>Python</Code>. ça part de l'étude de la problèmatique de la collecter, de la nettoyage, à la visualisation.</p>
+              </div>
+            <div className="flex flex-col gap-2 flex-1">
+                <Image
+                    src="/svg/power_BI.png"
+                    alt="powerBI logo"
+                    width={42}
+                    height={42}
+                    />
+                 <h3 className="text-2xl font-semibold tracking-tight">Power BI</h3>
+                <p className="text-sm text-muted-foreground">Je travaille sur des solutions d'aide à la décision à travers des dashboards interactifs avec <Code className="text-alert-success">Power BI Desktop</Code>. J'utilise aussi <Code>Python</Code> notamment avec les framework de visualisation</p>
             </div>
-        </div>
             </div>
-        </Container>
-    )
+        
+    </Container>
+  )
 }

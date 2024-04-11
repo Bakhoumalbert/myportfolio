@@ -27,12 +27,12 @@ export const TopHero = () => {
                     Ingénieur en Informatique
                 </h2>
               <p className="text-base">
-                  Je suis passionné de création d'<span className="text-primary">application web</span> et de la <span className="text-primary">science des données</span> et je partage du contenu sur {" "}
-              <Link href="https://www.linkedin.com/in/albert-sandokh-bakhoum-020305266/">
-                <Code className="inline-flex items-center gap-1">
-                    <LinkedinIcon size={16} className="inline" />LinkedIn
+                  Je suis passionné de création d'<Code className="text-primary">application web</Code> et de la <Code className="text-primary">science des données</Code> et je partage du contenu sur {" "}
+                <Code className="my-2">
+                  <Link href="https://www.linkedin.com/in/albert-sandokh-bakhoum-020305266/" className="inline-flex items-center gap-1">
+                        <LinkedinIcon size={16} className="inline" />LinkedIn
+                  </Link>
                 </Code>
-              </Link>
               </p>
             </div>
             <div className="flex-1 max-md:m-auto ml-auto">

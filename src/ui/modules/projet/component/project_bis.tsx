@@ -9,7 +9,10 @@ export const Projects = () => {
         <h1 className="text-4xl font-caption">
             Projets
         </h1>
-        <BentoGrid className="py-6 md:auto-rows-[20rem]">
+            <h2 className="pb-2 text-xl font-semibold tracking-tight">
+                Mes récentes réalisations
+            </h2>
+        <BentoGrid className="md:auto-rows-auto">
             {items.map((item, i) => (
                 <BentoGridItem
                 key={i}
@@ -37,21 +40,21 @@ const Skeleton = ({img, alt}: Props) => (
 const items = [
     {
         title: "Club des Informaticiens de l'UAM",
-        description: "Il s'agit d'un réseau où les adhérents peuvent partagés les projets et recevoir des retours",
+        description: "Il s'agit d'un réseau où les adhérents peuvent partagés les projets et recevoir des retours...",
         header: <Skeleton img="/assets/images/ci_uam.png" alt="image de site" />,
         className: "md:col-span-2",
         link: "https://coderapp-99e22.web.app/"
     },
     {
-        title: "The Digital Revolution",
-        description: "Dive into the transformative power of technology.",
-        header: <Skeleton img="/assets/images/club_uam.png" alt="image de site" />,
+        title: "Dite minèraux du Sénégal",
+        description: "Collecter, Nettoyage, visualisation des données avec streamlit...",
+        header: <Skeleton img="/assets/images/mineraux.png" alt="image de site" />,
         className: "md:col-span-1",
         link: "https://coderapp-99e22.web.app/"
     },
     {
-        title: "Plateforme d'apprentissage",
-        description: "C'est une plateforme de publication et d'apprentissage",
+        title: "E-learning",
+        description: "C'est une plateforme de publication et d'apprentissage...",
         header: <Skeleton img="/assets/images/justLearn.png" alt="Capture de la plateforme justLearn" />,
         className: "md:col-span-1",
         link: "https://just-code.vercel.app/"
@@ -59,7 +62,7 @@ const items = [
     {
         title: "Mise en place d'un entrepôts de données",
         description:
-            "Modélisation et implémentation d'un data Warehouse pour la MFPAI.",
+            "Conception, Modélisation et implémentation d'un data Warehouse pour la MFPAI. ETL, Data Integration, Data Orchectration,...",
         header: <Skeleton img="/assets/images/static_apprenant1.png" alt="image de site" />,
         className: "md:col-span-2",
         link: "https://mfpai2023.streamlit.app/"

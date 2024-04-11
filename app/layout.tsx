@@ -50,9 +50,9 @@ export default function RootLayout({ children }: PropsWithChildren) {
             disableTransitionOnChange
           >
             <div className="w-full border-b border-border/20">
-              <div className="m-auto flex-1 max-w-6xl">
+              <div className="m-auto flex-1 ">
                 <Header/>
-                <Spacing size="md" />
+                <Spacing />
                   {children}
                 <Footer/>
               </div>

@@ -7,7 +7,7 @@ export const Contact = () => {
         <h1 className="text-4xl font-caption">
             Contactez-moi
         </h1>
-        <h2 className="pb-2 text-3xl font-semibold tracking-tight">
+        <h2 className="pb-2 text-xl font-semibold tracking-tight">
           Je serais très heureux de travailler avec vous.
         </h2>
           <div className="flex max-md:flex-col w-full gap-4">

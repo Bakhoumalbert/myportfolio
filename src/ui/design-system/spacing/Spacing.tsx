@@ -4,7 +4,7 @@ export type SpacingProps = {
     size?: "sm" | "md" | "lg";
 }
 
-export const Spacing = ({size = "md"}: SpacingProps) => {
+export const Spacing = ({size = "sm"}: SpacingProps) => {
   return (
     <div
         className={cn({

@@ -18,7 +18,7 @@ export const Footer = () => {
                     </div>
                     <div className="flex flex-col justify-start  gap-2 text-sm ">
                         <h3>
-                            <Link href="/blog">
+                            <Link href="/blog" className='text-muted-foreground'>
                                     Blog
                             </Link>
                         </h3>
