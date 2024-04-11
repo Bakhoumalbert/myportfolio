@@ -11,7 +11,7 @@ export function Header() {
             <Container className="flex items-baseline border-b-2 border-collapse">
                 <Link href="/">
                     <h1 className="text-base font-bold text-muted-foreground hover:text-primary">
-                            {SiteConfig.title}
+                        {SiteConfig.title}
                     </h1>
                 </Link>
                 <div className="flex-1">
