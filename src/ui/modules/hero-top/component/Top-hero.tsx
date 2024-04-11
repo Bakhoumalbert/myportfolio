@@ -27,7 +27,7 @@ export const TopHero = () => {
                     Ingénieur en Informatique
                 </h2>
               <p className="text-base">
-                  Je suis passionné de création d'<Code className="text-primary">application web</Code> et de la <Code className="text-primary">science des données</Code> et je partage du contenu sur {" "}
+                  Je suis passionné dans  création d'<Code className="text-primary">application web</Code> et de la <Code className="text-primary">science des données</Code> et je partage du contenu sur {" "}
                 <Code className="my-2">
                   <Link href="https://www.linkedin.com/in/albert-sandokh-bakhoum-020305266/" className="inline-flex items-center gap-1">
                         <LinkedinIcon size={16} className="inline" />LinkedIn
@@ -36,8 +36,8 @@ export const TopHero = () => {
               </p>
             </div>
             <div className="flex-1 max-md:m-auto ml-auto">
-              <div className="flex justify-end ">
-              <Avatar src={"/assets/images/profil.jpg"} alt="mon avatar" size='extra-large' />
+              <div className="flex justify-end">
+                <Avatar src={"/assets/images/profil.jpg"} alt="mon avatar" size='extra-large' />
               </div>
             </div>    
         </Container>
