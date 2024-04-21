@@ -43,8 +43,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
             'font-sans h-full bg-background text-foreground',
           )}
         >
-          <Providers
-          >
+          {/* <Providers> */}
             <div className="w-full border-b border-border/20">
               <div className="m-auto flex-1 ">
                 <Header/>
@@ -56,7 +55,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
                 <Footer/>
               </div>
             </div>
-          </Providers>
+          {/* </Providers> */}
         </body>
       </html>
     </>

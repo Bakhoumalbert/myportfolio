@@ -1,7 +1,6 @@
 // src/components/layout/Header.
 
 import { Button } from "@/components/ui/button";
-import { AuthButton } from "@/features/auth/AuthButton";
 import { ClientOnly } from "@/hook/isClient";
 import { SiteConfig } from "@/lib/site-config";
 import { ThemeToggle } from "@/theme/ThemeToggle";

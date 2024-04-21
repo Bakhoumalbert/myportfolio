@@ -1,13 +1,8 @@
-import { getAuthSession } from "@/lib/auth";
 import { Post } from "@/ui/modules/blog/blog";
 import LayoutBlog from "./layout";
 import { Code } from "@/ui/modules/hero-top/component/Top-hero";
 
 export default async function BlogPage() {
-
-    const session = await getAuthSession();
-
-    const user = session?.user
 
     return (
         <LayoutBlog>
