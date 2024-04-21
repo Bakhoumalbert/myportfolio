@@ -37,7 +37,7 @@ export async function Header() {
                                 variant="ghost"
                                 size="icon"
                             >
-                                    <Sun className="h-[1.5rem] w-[1.3rem] dark:hidden" />
+                                <Sun className="h-[1.5rem] w-[1.3rem] dark:hidden" />
                             </Button> }>
                             <ThemeToggle />
                         </ClientOnly>

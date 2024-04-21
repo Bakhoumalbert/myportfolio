@@ -12,6 +12,7 @@ import Head from 'next/head';
 import { PropsWithChildren } from 'react';
 import { Providers } from './Provider';
 import './globals.css';
+import { ThemeProvider } from '@/theme/ThemeProvider';
 
 const AnekTelugu = Anek_Telugu({ 
   subsets: ['latin'], 
@@ -43,7 +44,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
             'font-sans h-full bg-background text-foreground',
           )}
         >
-          {/* <Providers> */}
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="w-full border-b border-border/20">
               <div className="m-auto flex-1 ">
                 <Header/>
@@ -55,7 +56,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
                 <Footer/>
               </div>
             </div>
-          {/* </Providers> */}
+          </ThemeProvider>
         </body>
       </html>
     </>

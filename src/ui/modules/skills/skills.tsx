@@ -10,7 +10,7 @@ export const Skills = () => {
               Compétences
           </h1>
         <h2 className="pb-2 text-xl font-semibold tracking-tight first:mt-0">
-            J'aime travailler sur... 
+            Je travailler avec... 
         </h2>
         <div className="flex max-md:flex-col gap-4">
             <div className="flex flex-col gap-2 flex-1">
@@ -33,17 +33,17 @@ export const Skills = () => {
                       height={42}
                       />
                   <h3 className="text-2xl font-semibold tracking-tight">Python</h3>
-          <p className="text-sm text-muted-foreground">Je travaille aussi comme <Code>Data Engineer</Code> avec <Code>Python</Code>. ça part de l'étude de la problèmatique de la collecter, de la nettoyage, à la visualisation.</p>
+          <p className="text-sm text-muted-foreground">Je travaille aussi comme <Code>Data Engineer</Code> avec <Code>Python</Code>. ça part de l'étude de la problèmatique de la collecter, de la nettoyage, à la visualisation avec les bibliothéques.</p>
               </div>
             <div className="flex flex-col gap-2 flex-1">
                 <Image
                     src="/svg/power_BI.png"
                     alt="powerBI logo"
-                    width={52}
-                    height={52}
+                    width={66}
+                    height={66}
                     />
                  <h3 className="text-2xl font-semibold tracking-tight">Power BI</h3>
-                <p className="text-sm text-muted-foreground">Je travaille sur des solutions d'aide à la décision à travers des dashboards interactifs avec <Code className="text-alert-success">Power BI Desktop</Code>. J'utilise aussi <Code>Python</Code> notamment avec les framework de visualisation</p>
+                <p className="text-sm text-muted-foreground">Je travaille sur des solutions d'aide à la décision à travers des dashboards interactifs avec <Code className="text-alert-success">Power BI Desktop</Code>. J'utilise aussi <Code>Python</Code> notamment avec les framework de visualisation.</p>
             </div>
             <div className="flex flex-col gap-2 flex-1">
                 <Image
