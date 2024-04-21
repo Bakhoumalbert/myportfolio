@@ -39,11 +39,21 @@ export const Skills = () => {
                 <Image
                     src="/svg/power_BI.png"
                     alt="powerBI logo"
-                    width={42}
-                    height={42}
+                    width={52}
+                    height={52}
                     />
                  <h3 className="text-2xl font-semibold tracking-tight">Power BI</h3>
                 <p className="text-sm text-muted-foreground">Je travaille sur des solutions d'aide à la décision à travers des dashboards interactifs avec <Code className="text-alert-success">Power BI Desktop</Code>. J'utilise aussi <Code>Python</Code> notamment avec les framework de visualisation</p>
+            </div>
+            <div className="flex flex-col gap-2 flex-1">
+                <Image
+            src="/svg/ETL.png"
+                    alt="talend logo"
+                    width={42}
+                    height={42}
+                    />
+                 <h3 className="text-2xl font-semibold tracking-tight">ETL process</h3>
+          <p className="text-sm text-muted-foreground">Je développe des outils moteurs d'Extractions, de Transformations et de Chargement pour vos entrepôts de données avec <Code>Talend</Code> et <Code>Python</Code>.</p>
             </div>
             </div>
         

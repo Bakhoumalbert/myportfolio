@@ -1,7 +1,7 @@
 "use client"
+import { Container } from "@/ui/components/container/Container";
 import Image from "next/image";
 import { BentoGrid, BentoGridItem } from "../../../../components/ui/bento-grid";
-import { Container } from "@/ui/components/container/Container";
 
 export const Projects = () => {
     return (
@@ -50,14 +50,14 @@ const items = [
         description: "Collecter, Nettoyage, visualisation des données avec streamlit...",
         header: <Skeleton img="/assets/images/mineraux.png" alt="image de site" />,
         className: "md:col-span-1",
-        link: "https://coderapp-99e22.web.app/"
+        link: "https://minerauxvisiaux.streamlit.app/"
     },
     {
         title: "E-learning",
         description: "C'est une plateforme de publication et d'apprentissage...",
         header: <Skeleton img="/assets/images/justLearn.png" alt="Capture de la plateforme justLearn" />,
         className: "md:col-span-1",
-        link: "https://just-code.vercel.app/"
+        link: "https://just-create.vercel.app"
     },
     {
         title: "Mise en place d'un entrepôts de données",
@@ -65,6 +65,6 @@ const items = [
             "Conception, Modélisation et implémentation d'un data Warehouse pour la MFPAI. ETL, Data Integration, Data Orchectration,...",
         header: <Skeleton img="/assets/images/static_apprenant1.png" alt="image de site" />,
         className: "md:col-span-2",
-        link: "https://mfpai2023.streamlit.app/"
+        link: "https://drive.google.com/file/d/1XxWl37DglShOuJ8Yo0b7f5vLlRUEViki/view?usp=drive_link"
     },
 ];

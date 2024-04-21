@@ -3,21 +3,20 @@ import { Footer } from '@/layout/Footer';
 import { Header } from '@/layout/Header';
 import { SiteConfig } from '@/lib/site-config';
 import { cn } from '@/lib/utils';
-import { ThemeProvider } from '@/theme/ThemeProvider';
+import { Spacing } from '@/ui/design-system/spacing/Spacing';
+import { GeistMono } from 'geist/font/mono';
+import { GeistSans } from 'geist/font/sans';
 import type { Metadata } from 'next';
 import { Anek_Telugu } from 'next/font/google';
-import { GeistSans } from 'geist/font/sans';
-import { GeistMono } from 'geist/font/mono';
 import Head from 'next/head';
 import { PropsWithChildren } from 'react';
+import { Providers } from './Provider';
 import './globals.css';
-import { Spacing } from '@/ui/design-system/spacing/Spacing';
 
 const AnekTelugu = Anek_Telugu({ 
   subsets: ['latin'], 
   variable: '--font-caption' 
 });
-
 
 export const metadata: Metadata = {
   title: SiteConfig.title,
@@ -25,7 +24,8 @@ export const metadata: Metadata = {
   icons: SiteConfig.icon
 };
 
-export default function RootLayout({ children }: PropsWithChildren) {
+export default async function RootLayout({ children }: PropsWithChildren) {
+
   return (
     <>
       <html lang="en" className="h-full" suppressHydrationWarning>
@@ -43,21 +43,20 @@ export default function RootLayout({ children }: PropsWithChildren) {
             'font-sans h-full bg-background text-foreground',
           )}
         >
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
+          <Providers
           >
             <div className="w-full border-b border-border/20">
               <div className="m-auto flex-1 ">
                 <Header/>
-                <Spacing />
+                <Spacing size='sm' />
+                <div className='flex-1  '>
                   {children}
+                </div>
+                <Spacing size='sm' />
                 <Footer/>
               </div>
             </div>
-          </ThemeProvider>
+          </Providers>
         </body>
       </html>
     </>
