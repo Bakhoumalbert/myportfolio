@@ -1,4 +1,4 @@
-import { Typography } from "@/ui/design-system/typography/Typography";
+import { Typography } from "@/components/ui/Typography";
 import Image from "next/image";
 import { formationData, formationListInterface } from "./formation-data";
 
@@ -30,13 +30,13 @@ const ListFormation = ({ formation }: Props) => (
             </div>
         {/* <Image width={80} height={20} src={formation.image} alt={formation.image}></Image> */}
         <div className="flex flex-col pt-2 gap-2">
-            <Typography variant="body-base" theme="gray" component="span">
+            <Typography>
                 {formation.duree}
             </Typography>
-            <Typography variant="body-base" theme="gray" component="span">
+            <Typography>
                 {formation.type}
             </Typography>
-            <Typography variant="lead" theme="gray" component="span">
+            <Typography>
                 {formation.title}
             </Typography>
             {/* <Typography variant="body-sn" component="p" theme="gray" className="ml-3">

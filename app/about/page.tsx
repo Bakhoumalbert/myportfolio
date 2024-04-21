@@ -1,13 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Typography } from '@/components/ui/Typography'
 import { Container } from '@/ui/components/container/Container'
-import { Typography } from '@/ui/design-system/typography/Typography'
 import { FormationCard } from '@/ui/modules/formation/component/formationCard'
 import Image from 'next/image'
 
 export default function AboutPage() {
     return (
         <Container className='flex flex-col space-y-8 py-10'>
-            <Typography variant='h5' theme='secondary'>
+            <Typography>
                 About me
             </Typography>
             <div className='flex flex-row items-center justify-between'>
@@ -17,7 +17,7 @@ export default function AboutPage() {
                 width={420}
                 height={420}
             />
-            <Typography className='text-justify space-y-4 pt-24' variant='body-lg' theme='gray'>
+            <div className='text-justify space-y-4 pt-24'>
                 <p>
                     Je suis étudiant en fin de premier cycle à l'École des Sciences et
                 Techniques de l'Ingénierie (ESTI) de l'Université Amadou Mahtar
@@ -29,10 +29,10 @@ export default function AboutPage() {
                 <p>
                     J'aime développer des applications et j'aime travailler pour rendre les données utiles.
                 </p>
-            </Typography>
+            </div>
             </div>
             <div className='flex  flex-col space-y-10 pt-10'>
-            <Typography variant="h5" theme="secondary">Parcours</Typography>
+            <Typography>Parcours</Typography>
             <FormationCard />  
             </div>
         </Container>
