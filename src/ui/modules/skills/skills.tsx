@@ -12,7 +12,7 @@ export const Skills = () => {
         <h2 className="pb-2 text-xl font-semibold tracking-tight first:mt-0">
             Je travailler avec... 
         </h2>
-        <div className="flex max-md:flex-col gap-4">
+        <div className="max-md:flex-col gap-4 grid grid-cols-3">
             <div className="flex flex-col gap-2 flex-1">
                   <Image
                       src="/svg/react.svg"
@@ -55,6 +55,16 @@ export const Skills = () => {
                  <h3 className="text-2xl font-semibold tracking-tight">ETL process</h3>
           <p className="text-sm text-muted-foreground">Je développe des outils moteurs d'Extractions, de Transformations et de Chargement pour vos entrepôts de données avec <Code>Talend</Code> et <Code>Python</Code>.</p>
             </div>
+        <div className="flex flex-col gap-2 flex-1">
+          <Image
+            src="/assets/images/spark.png"
+            alt="talend logo"
+            width={52}
+            height={52}
+          />
+          <h3 className="text-2xl font-semibold tracking-tight">Spark</h3>
+          <p className="text-sm text-muted-foreground">Je développe des pipelines de gros volume de données avec <Code>Apache Sark</Code> avec la biliothéque <Code>Pyspark</Code>.</p>
+        </div>
             </div>
         
     </Container>

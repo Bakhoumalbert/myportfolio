@@ -26,7 +26,7 @@ export async function Header() {
                 </Link>
                 <div className="flex-1">
                 <ul className="flex flex-1 items-center justify-end space-x-4">
-                    <Link href={"/blog"} className="text-muted-foreground hover:text-primary">
+                        <Link href={"https://just-create.vercel.app/"} className="text-muted-foreground hover:text-primary">
                         Blog
                     </Link>
                     <nav className="flex space-x-1">

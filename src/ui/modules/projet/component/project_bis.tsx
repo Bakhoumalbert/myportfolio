@@ -62,9 +62,9 @@ const items = [
     {
         title: "Mise en place d'un entrepôts de données",
         description:
-            "Conception, Modélisation et implémentation d'un data Warehouse pour la MFPAI. ETL, Data Integration, Data Orchectration,...",
-        header: <Skeleton img="/assets/images/static_apprenant1.png" alt="image de site" />,
+            "Conception, Modélisation et implémentation d'un data Warehouse et visualisation. ETL, Data Integration, Data Orchectration,...",
+        header: <Skeleton img="/assets/images/projet_bi.png" alt="image de site" />,
         className: "md:col-span-2",
-        link: "https://drive.google.com/file/d/1XxWl37DglShOuJ8Yo0b7f5vLlRUEViki/view?usp=drive_link"
+        link: "#"
     },
 ];
